@@ -169,15 +169,13 @@
         <mxCell id="W8wxUIG6hcebt33dwh8t-45" value="Client" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" parent="1" vertex="1">
           <mxGeometry x="782" y="-230" width="78" height="76" as="geometry" />
         </mxCell>
-        <mxCell id="W8wxUIG6hcebt33dwh8t-131" value="Integrates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="W8wxUIG6hcebt33dwh8t-48" target="W8wxUIG6hcebt33dwh8t-115" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="288" y="199" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="W8wxUIG6hcebt33dwh8t-150" value="Authorize request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="W8wxUIG6hcebt33dwh8t-48" target="W8wxUIG6hcebt33dwh8t-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="W8wxUIG6hcebt33dwh8t-48" value="Private API Gateway" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" parent="1" vertex="1">
+        <mxCell id="yXCmuLq85bu9272WF-M7-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="W8wxUIG6hcebt33dwh8t-48" target="yXCmuLq85bu9272WF-M7-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W8wxUIG6hcebt33dwh8t-48" value="Public API Gateway" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" parent="1" vertex="1">
           <mxGeometry x="690" y="160" width="78" height="78" as="geometry" />
         </mxCell>
         <mxCell id="W8wxUIG6hcebt33dwh8t-51" value="Associate certificate&lt;div&gt;Uses friendly DNS&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="W8wxUIG6hcebt33dwh8t-23" target="W8wxUIG6hcebt33dwh8t-28" edge="1">
@@ -322,7 +320,7 @@
         <mxCell id="W8wxUIG6hcebt33dwh8t-142" value="Internet Gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_gateway;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="-329.5" y="91" width="69" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="W8wxUIG6hcebt33dwh8t-115" value="Application Load Balancer&lt;div&gt;(Layer 7, Port X)&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.application_load_balancer;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+        <mxCell id="W8wxUIG6hcebt33dwh8t-115" value="Internal Application&amp;nbsp;&lt;div&gt;Load Balancer&lt;div&gt;(Layer 7, Port X)&lt;/div&gt;&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.application_load_balancer;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="-80" y="163" width="69" height="72" as="geometry" />
         </mxCell>
         <mxCell id="W8wxUIG6hcebt33dwh8t-64" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.vpc_nat_gateway;fillColor=#F58536;gradientColor=none;" parent="1" vertex="1">
@@ -379,6 +377,12 @@
         </mxCell>
         <mxCell id="W8wxUIG6hcebt33dwh8t-109" value="Read Replica" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.rds_db_instance_read_replica;fillColor=#2E73B8;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="95.25" y="1133" width="49.5" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="yXCmuLq85bu9272WF-M7-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="yXCmuLq85bu9272WF-M7-8" target="W8wxUIG6hcebt33dwh8t-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yXCmuLq85bu9272WF-M7-8" value="Internal Network&amp;nbsp;&lt;div&gt;Load Balancer&lt;/div&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.network_load_balancer;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="78" height="78" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
